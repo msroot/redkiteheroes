@@ -16,12 +16,13 @@ group :development, :test do
   gem "sqlite3-ruby",  :require => "sqlite3"
 end
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'oauth2'
 # Use CoffeeScript for .js.coffee assets and views
 
 gem 'high_voltage', '~> 2.1.0'
