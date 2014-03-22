@@ -39,6 +39,7 @@
           <%= image_tag("three.png") %>
           <div class="container">
             <div class="carousel-caption">
+							<%= image_tag("hero_big.png") %>
 								<h1>“Redkite is a solid rock. I know when I ring that no one is going 
 																to judge me. They listen and they find solutions.” </h1>
 																<p>– A Mum supported by Redkite (need to run by Rosie) </p>
@@ -55,6 +56,7 @@
           <%= image_tag("one.png") %>
           <div class="container">
             <div class="carousel-caption">
+							<%= image_tag("hero_big.png") %>
 							<h1>“Redkite stepped in and paid some bills…Taking that worry for 
 														me so I could concentrate on my son and family” </h1>
 							<p>– A Family’s thanks. </p>
@@ -175,6 +177,80 @@
       <!-- /END THE FEATURETTES -->
 
 
+
+
+
+
+
+
+
+
+<h1>Latest Heroes:</h1>
+    <!-- 
+    ================================================== -->
+
+<% 10.times do |time| %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="well well-sm">
+                <div class="row">
+                    <div class="col-xs-3 col-md-3 text-center">
+											
+											
+<%  img = ["901326","3322796","12410017","36409026","48902351","58702055","204400841","218100950","218300484","219200620","219800544","284002804","500264348","500334260","500480418","500889952","501125203","502418916","502778674","502873878","503653302","503921970","504187714","506075294","506495148","507007206","507029061","507915954","508431849"].sample %>
+											
+                        <img src="http://graph.facebook.com/<%= img %>/picture?type=large" alt="bootsnipp"
+                            class="img-rounded img-responsive"  style="width: 120px;
+height: 120px;"/>
+                    </div>
+                    <div class="col-xs-9 col-md-9 section-box">
+                        <h2>
+
+                            <%= ["Alexander Padberg", "Aracely Smitham", "Bruce Muller", "Jeff Pouros", "Yannis Kolovos", "Victor Nava", "Rogelio Vandervort", "Darius Schulist IV", "Kayleigh Terry", "Ellie Mardas"].sample %>
+                            </span></a>
+                        </h2>
+                        <p>
+                            Win <%= (0..100).to_a.sample %> credits by posting at <%= ["Twitter", "Facebook", "LinkedIn", "Vimeo"].sample %></p>
+                        <hr />
+                        <div class="row rating-desc">
+                            <div class="col-md-12">
+                                <span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart">
+                                </span><span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-heart">
+                                </span><span class="glyphicon glyphicon-heart"></span>(<%= (0..100).to_a.sample %>)<span class="separator">|</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+				
+<% end %>
+				<style type="text/css" media="screen">
+				.glyphicon { margin-right:5px;}
+				.section-box h2 { margin-top:0px;}
+				.section-box h2 a { font-size:15px; }
+				.glyphicon-heart { color:#e74c3c;}
+				.glyphicon-comment { color:#27ae60;}
+				.separator { padding-right:5px;padding-left:5px; }
+				.section-box hr {margin-top: 0;margin-bottom: 5px;border: 0;border-top: 1px solid rgb(199, 199, 199);}
+									
+				</style>
+
+
+
+
+
+
+		    <!-- 
+		    ================================================== -->
+		    
+				
+				
+				
+				
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
